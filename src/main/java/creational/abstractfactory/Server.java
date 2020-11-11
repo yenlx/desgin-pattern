@@ -1,10 +1,11 @@
-package creational.factory;
+package creational.abstractfactory;
 
-public class PC implements Computer {
+
+public class Server extends Computer {
     public String name;
     public String memory;
 
-    public PC(String name, String memory) {
+    public Server(String name, String memory) {
         this.name = name;
         this.memory = memory;
     }
@@ -12,6 +13,7 @@ public class PC implements Computer {
     public String getName() {
         return name;
     }
+
     public String getMemory() {
         return memory;
     }

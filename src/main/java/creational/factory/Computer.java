@@ -1,12 +1,8 @@
 package creational.factory;
 
-public abstract class Computer {
-    abstract String getName();
+public interface Computer {
+    String getName();
 
-    abstract String getMemory();
+    String getMemory();
 
-    @Override
-    public String toString() {
-        return "Name = " + getName() + "; Mem = " + getMemory();
-    }
 }

@@ -1,6 +1,6 @@
 package creational.factory;
 
-public class Server extends Computer {
+public class Server implements Computer {
     public String name;
     public String memory;
 
@@ -9,11 +9,16 @@ public class Server extends Computer {
         this.memory = memory;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    String getMemory() {
+    public String getMemory() {
         return memory;
+    }
+
+    @Override
+    public String toString() {
+        return "Name = " + getName() + "; Mem = " + getMemory();
     }
 }
